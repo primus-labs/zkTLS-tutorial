@@ -26,39 +26,29 @@ Primus' Proxy mode uses the efficient [QuickSilver](https://eprint.iacr.org/2021
 
 💡 **Use Proxy mode** when performance and throughput are key considerations.
 
+## Primus AlphaNet
+Primus zkTLS is now deployed within a decentralized attestor group, i.e., Primus AlphaNet, to support dapps execute data verification tasks. Refer to this [doc](https://docs.primuslabs.xyz/primus-network/build-with-primus/overview) for more details about the network. Developers can simply use the SDKs to create their own zkTLS application on Primus AlphaNet.
+
 ## Before You Begin
 
 Make sure your environment includes:
 
 - **Node.js ≥ 18**
 - **npm / yarn**
-- Access to a supported blockchain RPC (for onchain verification)
 
-## Quick Start
+## Quick Start 
 
-### **Step 1 — Choose your environment**
+### ** Choose your environment**
 > Depending on your setup, use one of the following SDKs:
-### 🧩 **For Dapp Integration (Frontend)**
-- [Overview](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/overview/)
-- [Install Guide](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/install/#installation-steps)
-- [Test Example](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/test/#implementation)
-- [Production Example](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/production/#customized-parameters)
+### 🧩 **For Dapp Integration (User need to install Primus Extension)**
+- [Install Guide](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-developers/install)
+- [Example](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-developers/example#complete-example)
 
 ### ⚙️ **For Backend Integration**
+- [Installation](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-backend/install)
+- [Example](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-backend/simpleexample#implementation)
 
-- [Overview](https://docs.primuslabs.xyz/data-verification/core-sdk/overview)
-- [Installation](https://docs.primuslabs.xyz/data-verification/core-sdk/install/#installation-steps)
-- [Simple Example](https://docs.primuslabs.xyz/data-verification/core-sdk/simpleexample/#zktls-modes)
+### **Next Steps: Verify and Compute -- Build zkTLS with zkVM**
 
-### **Step 2 — Set up Onchain Interactions (Optional)**
-> If you need to verify zkTLS proofs onchain, use the Solidity SDK.
-- [Overview](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/solidity/overview)
-- [Quick Start](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/solidity/quickstart)
+You can check this demo [repo](https://github.com/primus-labs/DVC-Demo) to see how primus zkTLS can be combined with zkVM to provide a private data verification and computation capability to applications.
 
-### **Step 3 — Verify your first proof**
-> Example for demonstration — actual SDK API names may vary slightly.
-
-### **Next Steps**
-- Explore advanced usage examples in the [Primus zkTLS documentation](https://docs.primuslabs.xyz/data-verification/zk-tls-sdk/overview?utm_source=chatgpt.com).
-- Experiment with different attestation modes (MPC vs Proxy).
-- Integrate onchain verification for your application’s data provenance layer.
