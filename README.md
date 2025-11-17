@@ -48,7 +48,15 @@ Make sure your environment includes:
 - [Installation](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-backend/install)
 - [Example](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-backend/simpleexample#implementation)
 
-### **Next Steps: Verify and Compute -- Build zkTLS with zkVM**
+### Error Codes 
+Check [here](https://docs.primuslabs.xyz/primus-network/build-with-primus/for-developers/errorcode) for the defined errors about zkTLS in the Primus SDKs.
 
-You can check this demo [repo](https://github.com/primus-labs/DVC-Demo) to see how primus zkTLS can be combined with zkVM to provide a private data verification and computation capability to applications.
+### **Next Steps: Private Data Verification and Computation -- Build zkTLS with zkVM**
+
+zkTLS provides off-chain data verifiability, but in most real scenarios, a user’s personal data must remain private while still being computable. This requires another privacy-preserving computation technique, namely a zkVM,  to work alongside zkTLS. Together, they enable **Data Verification & Computation (DVC)**, allowing applications to verify and compute on private data securely.
+
+Primus zkTLS enables DVC by passing user data attestation and its hash value to the zkVM, where the zk proof is generated on the private data and its metadata restrictions. The zk proof can be verified on-chain for better scalability and privacy. You may check this  
+[content](https://github.com/primus-labs/DVC-Demo/blob/main/DEVELOPER_GUIDE.md)) for more details.
+
+You can also check this demo [repo](https://github.com/primus-labs/DVC-Demo) to see how primus zkTLS can be combined with zkVM to provide a private data verification and computation capability to applications.
 
